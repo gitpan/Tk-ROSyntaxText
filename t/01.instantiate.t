@@ -5,14 +5,21 @@
 use strict;
 use warnings;
 use English qw{-no_match_vars};
-use Test::More 0.94 tests => 3;
+use Test::More 0.94;
 
 use Tk;
 use Tk::ROSyntaxText;
 
-my $mw = MainWindow->new(
+my $mw = eval { MainWindow->new(
     -title => q{Tk::ROSyntaxText: 01.instantiate.t},
-);
+); };
+
+if ($mw) {
+    plan tests => 3;
+}
+else {
+    plan skip_all => q{No display detected.};
+}
 
 my $rosyn = eval { $mw->ROSyntaxText(); };
 

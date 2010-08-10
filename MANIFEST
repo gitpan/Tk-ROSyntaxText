@@ -4,6 +4,7 @@ ignore.txt
 lib/Tk/ROSyntaxText.pm
 Makefile.PL
 MANIFEST
+META.yml
 README
 t/00.load.t
 t/01.instantiate.t
@@ -28,4 +29,3 @@ t/19.scrollshort.t
 t/perlcritic.t
 t/pod-coverage.t
 t/pod.t
-META.yml

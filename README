@@ -1,4 +1,4 @@
-Tk::ROSyntaxText version 1.000
+Tk::ROSyntaxText version 1.001
 ===================================================
 
 Tk::ROSyntaxText provides a read-only text widget that applies syntax
@@ -12,7 +12,7 @@ Optional modules for testing:
 
 INSTALLATION
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+****************************************************************************
 Note for testers and developers:
     If the environment variable CPAN_TEST_AUTHOR is set to a TRUE value,
     additional functionality is switched on while the regression tests are
@@ -25,7 +25,7 @@ Note for testers and developers:
        * perlcritic.t   - uses Test::Perl::Critic
        * pod.t          - uses Test::Pod
        * pod-coverage.t - uses Test::Pod::Coverage
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+****************************************************************************
 
 Use any of the CPAN utilities, e.g.
     perl -MCPAN -e shell (then 'install Tk::ROSyntaxText')
@@ -52,6 +52,21 @@ Or use the Module::Build commands:
     ./Build
     ./Build test
     ./Build install
+
+****************************************************************************
+Installation Diagnostics
+------------------------
+
+skipped: No display detected.
+    Test GUIs cannot be displayed so these tests have been skipped.
+    The most likely causes are X Server not running or $DISPLAY not set.
+    This was introduced in version 1.001 - see the 'Changes' file for
+    a fuller explanation.
+
+skipped: Author test. To run: set $ENV{CPAN_TEST_AUTHOR} to a TRUE value.
+    Should be self-explanatory.
+    "Note for testers and developers" (above) has a few more details.
+****************************************************************************
 
 
 DEPENDENCIES

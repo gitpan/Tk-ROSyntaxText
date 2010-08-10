@@ -3,7 +3,7 @@ package Tk::ROSyntaxText;
 use strict;
 use warnings;
 
-our $VERSION = '1.000';
+our $VERSION = '1.001';
 
 use Tk;
 use base qw{Tk::Derived Tk::ROText};
@@ -302,7 +302,7 @@ Tk::ROSyntaxText - Read-only text widget with syntax highlighting
 
 =head1 VERSION
 
-This document describes Tk::ROSyntaxText version 1.000
+This document describes Tk::ROSyntaxText version 1.001
 
 
 =head1 SYNOPSIS

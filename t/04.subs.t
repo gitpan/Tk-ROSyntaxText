@@ -5,14 +5,21 @@
 use strict;
 use warnings;
 use English qw{-no_match_vars};
-use Test::More 0.94 tests => 3;
+use Test::More 0.94;
 
 use Tk;
 use Tk::ROSyntaxText;
 
-my $mw = MainWindow->new(
+my $mw = eval { MainWindow->new(
     -title => q{Tk::ROSyntaxText: 04.subs.t},
-);
+); };
+
+if ($mw) {
+    plan tests => 3;
+}
+else {
+    plan skip_all => q{No display detected.};
+}
 
 my $rh_subs = { e => q{<LETTER_e>}, qq{\n} => q{<NL>} };
 
